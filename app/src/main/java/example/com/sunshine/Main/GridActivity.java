@@ -13,9 +13,10 @@ import example.com.sunshine.R;
  * Created by qianxiangsen on 2017/3/27.
  */
 
-public class GridActivity extends AppCompatActivity{
+public class GridActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +25,10 @@ public class GridActivity extends AppCompatActivity{
         setRequestAdapter();
 
     }
-    private void setRequestAdapter(){
+
+    private void setRequestAdapter() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(new GridAdapter(this));
     }
 }

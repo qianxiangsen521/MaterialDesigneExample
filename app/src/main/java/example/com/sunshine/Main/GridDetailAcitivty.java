@@ -22,7 +22,7 @@ public class GridDetailAcitivty extends AppCompatActivity {
         setContentView(R.layout.activity_detail_grid);
         Intent mTitle = getIntent();
         String title = mTitle.getStringExtra("title");
-        mToolbar = (Toolbar)findViewById(R.id.app_bar);
+        mToolbar = (Toolbar) findViewById(R.id.app_bar);
         mToolbar.setTitle(title);
     }
 }

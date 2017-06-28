@@ -18,10 +18,11 @@ import example.com.sunshine.R;
  * Created by qianxiangsen on 2017/3/24.
  */
 
-public class SlideActivity extends AppCompatActivity{
+public class SlideActivity extends AppCompatActivity {
 
     private Button test;
     private ImageView icon;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

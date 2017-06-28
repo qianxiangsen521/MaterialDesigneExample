@@ -15,7 +15,7 @@ import example.com.sunshine.R;
  * Created by qianxiangsen on 2017/3/24.
  */
 
-public class main extends AppCompatActivity{
+public class ScrollAnimationActivity extends AppCompatActivity {
 
     private ScrollView mScrollView;
     boolean mDidAnimateEnter = false;

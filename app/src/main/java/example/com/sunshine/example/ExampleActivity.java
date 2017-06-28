@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 
 import butterknife.Bind;
@@ -17,12 +13,11 @@ import butterknife.ButterKnife;
 import example.com.sunshine.Main.DynamicSurfacesActivity;
 import example.com.sunshine.Main.GridActivity;
 import example.com.sunshine.Main.InterpolatorActivity;
-import example.com.sunshine.Main.LoginActivity;
 import example.com.sunshine.Main.AnimatorActivity;
 import example.com.sunshine.Main.SceneActivity;
 import example.com.sunshine.Main.SlideActivity;
 import example.com.sunshine.Main.TransitionActivity;
-import example.com.sunshine.Main.main;
+import example.com.sunshine.Main.ScrollAnimationActivity;
 import example.com.sunshine.R;
 
 /**
@@ -104,7 +99,7 @@ public class ExampleActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(new Intent(this, SceneActivity.class));
                 break;
             case R.id.bt7:
-                startActivity(new Intent(this, main.class));
+                startActivity(new Intent(this, ScrollAnimationActivity.class));
                 break;
             case R.id.bt8:
                 startActivity(new Intent(this, GridActivity.class));

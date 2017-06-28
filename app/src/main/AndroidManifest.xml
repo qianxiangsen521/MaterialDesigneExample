@@ -13,8 +13,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppThemeNoBar" >
-        <activity android:name="example.com.sunshine.example.ExampleActivity">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="example.com.sunshine.example.ExampleActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,32 +26,42 @@
         <activity
             android:name=".Main.LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppThemeNoBar" ></activity>
+            android:theme="@style/AppThemeNoBar"></activity>
 
-        <activity android:name=".Main.AnimatorActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
-        <activity android:name=".Main.InterpolatorActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
-        <activity android:name=".Main.SlideActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
-        <activity android:name=".Main.TransitionDetailActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
+        <activity
+            android:name=".Main.AnimatorActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
+        <activity
+            android:name=".Main.InterpolatorActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
+        <activity
+            android:name=".Main.SlideActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
+        <activity
+            android:name=".Main.TransitionDetailActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
 
-        <activity android:name=".Main.TransitionActivity"
+        <activity
+            android:name=".Main.TransitionActivity"
             android:theme="@style/AppTheme.Home"></activity>
 
-        <activity android:name=".Main.SceneActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
-        <activity android:name=".Main.main"
-            android:theme="@style/AppThemeNoBar" ></activity>
-        <activity android:name=".Main.DynamicSurfacesActivity"
-            android:theme="@style/AppThemeNoBar" ></activity>
+        <activity
+            android:name=".Main.SceneActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
+        <activity
+            android:name=".Main.ScrollAnimationActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
+        <activity
+            android:name=".Main.DynamicSurfacesActivity"
+            android:theme="@style/AppThemeNoBar"></activity>
 
-        <activity android:name=".Main.GridActivity"
-            android:theme="@style/AppTheme.Home" ></activity>
+        <activity
+            android:name=".Main.GridActivity"
+            android:theme="@style/AppTheme.Home"></activity>
 
-        <activity android:name=".Main.GridDetailAcitivty"
-            android:theme="@style/AppThemeNoBar"  ></activity>
+        <activity
+            android:name=".Main.GridDetailAcitivty"
+            android:theme="@style/AppThemeNoBar"></activity>
     </application>
 
 </manifest>

@@ -1,27 +1,17 @@
 package example.com.sunshine.Main;
 
-import android.animation.TimeInterpolator;
-import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.transition.Slide;
 import android.util.DisplayMetrics;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 
@@ -35,7 +25,7 @@ import example.com.sunshine.R;
  * Created by qianxiangsen on 2017/3/24.
  */
 
-public class TransitionActivity extends AppCompatActivity{
+public class TransitionActivity extends AppCompatActivity {
     String[][] mColorSet = {
             {"#D32F2F", "#F44336", "#FFCDD2", "#FFFFFF", "#448AFF", "#212121", "#727272", "#B6B6B6"},
             {"#0288D1", "#03A9F4", "#B3E5FC", "#FFFFFF", "#9E9E9E", "#212121", "#727272", "#B6B6B6"},
@@ -45,16 +35,17 @@ public class TransitionActivity extends AppCompatActivity{
             {"#512DA8", "#673AB7", "#D1C4E9", "#FFFFFF", "#03A9F4", "#212121", "#727272", "#B6B6B6"},
     };
 
-    public final static int DARK_PRIMARY   = 0;
-    public final static int PRIMARY        = 1;
-    public final static int LIGHT_PRIMARY  = 2;
-    public final static int TEXT           = 3;
-    public final static int ACCENT         = 4;
-    public final static int PRIMARY_TEXT   = 5;
+    public final static int DARK_PRIMARY = 0;
+    public final static int PRIMARY = 1;
+    public final static int LIGHT_PRIMARY = 2;
+    public final static int TEXT = 3;
+    public final static int ACCENT = 4;
+    public final static int PRIMARY_TEXT = 5;
     public final static int SECONDARY_TEXT = 6;
-    public final static int DIVIDER        = 7;
+    public final static int DIVIDER = 7;
 
-    @Bind(R.id.grid) protected GridView mGrid;
+    @Bind(R.id.grid)
+    protected GridView mGrid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

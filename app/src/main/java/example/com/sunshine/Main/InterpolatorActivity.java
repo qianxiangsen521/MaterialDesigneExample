@@ -3,8 +3,6 @@ package example.com.sunshine.Main;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.animation.Interpolator;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -17,9 +15,12 @@ import example.com.sunshine.R;
 
 public class InterpolatorActivity extends AppCompatActivity {
 
-    @Bind(R.id.interpolator_spinner)Spinner interpolatorSpinner;
-    @Bind(R.id.duration_spinner)Spinner duratorSpinner;
-    @Bind(R.id.textView)TextView textView;
+    @Bind(R.id.interpolator_spinner)
+    Spinner interpolatorSpinner;
+    @Bind(R.id.duration_spinner)
+    Spinner duratorSpinner;
+    @Bind(R.id.textView)
+    TextView textView;
 
     private static final String PACKAGE = "android.view.animation.";
     private static final String PACKAGE_V4 = "android.support.v4.view.animation.";
@@ -35,12 +36,10 @@ public class InterpolatorActivity extends AppCompatActivity {
     }
 
 
-
-
     @OnItemSelected({R.id.duration_spinner})
     void durationSelected(Spinner spinner, int position) {
         String durationString = (String) spinner.getAdapter().getItem(position);
-        switch(durationString) {
+        switch (durationString) {
             case "100ms":
                 duration = 100;
             case "900ms":
@@ -92,7 +91,7 @@ public class InterpolatorActivity extends AppCompatActivity {
         }
     }
 
-    @OnItemSelected(value=R.id.interpolator_spinner, callback = OnItemSelected.Callback.NOTHING_SELECTED)
+    @OnItemSelected(value = R.id.interpolator_spinner, callback = OnItemSelected.Callback.NOTHING_SELECTED)
     void onNothingSelected() {
 
     }
