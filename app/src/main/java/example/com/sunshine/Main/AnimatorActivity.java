@@ -1,30 +1,18 @@
 package example.com.sunshine.Main;
 
 import android.animation.Animator;
-import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.AnimationUtils;
-import android.view.animation.TranslateAnimation;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.Scanner;
 
 import example.com.sunshine.R;
 
@@ -38,6 +26,7 @@ public class AnimatorActivity extends AppCompatActivity {
     static String veggieText = "Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.";
 
     private ImageButton imageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,11 +77,11 @@ public class AnimatorActivity extends AppCompatActivity {
 //        int centerX,  int centerY, float startRadius, float endRadius) {
 //            )
 
-            //centerX centerY
-            //这是我们将要进行操作的视图 中心点x和y用来执行过度动画
+        //centerX centerY
+        //这是我们将要进行操作的视图 中心点x和y用来执行过度动画
 
-            //startRadius endRadius
-            //startRadius 动画开始的半径 endRadius 动画结束的半径
+        //startRadius endRadius
+        //startRadius 动画开始的半径 endRadius 动画结束的半径
 
 
         ((CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout)).setTitle(getString(R.string.app_name));
@@ -138,7 +127,7 @@ public class AnimatorActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            boolean isVeggie = ((ColorDrawable)view.getBackground()) != null && ((ColorDrawable)view.getBackground()).getColor() == green;
+            boolean isVeggie = ((ColorDrawable) view.getBackground()) != null && ((ColorDrawable) view.getBackground()).getColor() == green;
 
             TransitionManager.beginDelayedTransition((ViewGroup) view);
             //半宽半高的斜边
@@ -149,7 +138,8 @@ public class AnimatorActivity extends AppCompatActivity {
                 text2.setText(baconText);
                 view.setBackgroundColor(white);
             } else {
-                Animator anim = ViewAnimationUtils.createCircularReveal(view, (int) view.getWidth()/2, (int) view.getHeight()/2, 0, finalRadius);
+                Animator anim = null;
+                anim = ViewAnimationUtils.createCircularReveal(view, (int) view.getWidth() / 2, (int) view.getHeight() / 2, 0, finalRadius);
                 text1.setText(veggieTitle);
                 text2.setText(veggieText);
                 view.setBackgroundColor(green);
@@ -157,7 +147,6 @@ public class AnimatorActivity extends AppCompatActivity {
             }
         }
     }
-
 
 
 //    }
